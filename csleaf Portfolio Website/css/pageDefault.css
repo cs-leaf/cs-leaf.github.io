@@ -1,0 +1,149 @@
+/* Text uses EM, other elements use % or PX */
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Tilt+Warp&display=swap');
+*{
+    color: white;
+}
+/* ELEMENTS */
+body{
+    background-color: #0E0F13;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5% 0 0 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+h2{
+    font-family: "Asap", sans-serif;
+    font-weight: 800;
+    font-size: 2.4em;
+    margin: 0;
+}
+p{
+    font-family: "Asap", sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.375;
+    margin-top: -.5em;
+}
+span{
+    margin-top: 1.75rem;
+    display: block;
+}
+
+.navBtn{
+    width: 22%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+
+    font-family: "Asap", sans-serif;
+    font-weight: 800;
+    font-size: 1.5em;
+    color: #0E0F13;
+    text-decoration: none;
+    
+    transition-property: color, background-color;
+    transition-duration: .25s;
+}
+.navBtn:hover{
+    color: white;
+    background-color: #654391;
+}
+
+#landingLogo{
+    max-width: 100%;
+}
+
+.socialsBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: white;
+    fill:#0E0F13;
+
+    transition-property: background-color, fill;
+    transition-duration: .25s;
+}
+.socialsBtn:hover{
+    background-color: #654391;
+    fill: white;
+}
+.socialLogo{
+    width: 60%;
+    height: 60%;
+}
+
+/* Body and Main */
+.workingArea{
+    width: 57%;
+    height: fit-content;
+    margin: auto;
+}
+
+/* DIVS */
+.pageHeader{
+    text-align: center;
+}
+
+.indexBody{
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 4%;
+}
+#ibRight{
+    width: 56%;
+}
+#ibLeft{
+    width: 40%;
+}
+.bodyDivider{
+    height: 2.5px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 3em auto;
+}
+
+/* Text */
+.homeTitle{
+    font-family: "Tilt Warp", sans-serif;
+    font-weight: 400;
+    font-size: 6em;
+    margin: 0 0 0 0;
+}
+.homeSubtitle{
+    font-family: "Asap", sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0 0 0 0;
+}
+.pageTitle{
+    font-family: "Tilt Warp", sans-serif;
+    font-weight: 400;
+    font-size: 5.5em;
+    margin: 0 0 0 0;
+}
+.pThick{
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+    font-size: 1.35em;
+}
+.center{
+    text-align: center;
+}
