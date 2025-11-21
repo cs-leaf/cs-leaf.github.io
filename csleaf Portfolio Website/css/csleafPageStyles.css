@@ -51,7 +51,6 @@ div.indexBody.onLoadFadeIn{
     animation-delay: .5s;
 }
 
-/* Keyframes for on-load fade/slide animation */
 @keyframes fadeIn{
     from{
         opacity: 0;
@@ -61,6 +60,12 @@ div.indexBody.onLoadFadeIn{
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* SELECTORS */
+::selection{
+    background-color: #a480d3;
+    color: #0E0F13;
 }
 
 /* DIVS */
@@ -226,11 +231,13 @@ span.marTop{
     text-decoration: none;
     text-transform: uppercase;
     
-    transition: color 0.25s ease, background-color 0.25s ease;
+    transition-property: background-color, fill, scale ease;
+    transition-duration: .25s;
 }
 .navBtn:hover{
     color: white;
     background-color: #654391;
+    transform: scale(1.05);
 }
 .socialsBtn{
     display: flex;
@@ -242,12 +249,13 @@ span.marTop{
     background-color: white;
     fill:#0E0F13;
 
-    transition-property: background-color, fill;
+    transition-property: background-color, fill, scale ease;
     transition-duration: .25s;
 }
 .socialsBtn:hover{
     background-color: #654391;
     fill: white;
+    transform: scale(1.125);
 }
 .socialLogo{
     width: 1.25em;
