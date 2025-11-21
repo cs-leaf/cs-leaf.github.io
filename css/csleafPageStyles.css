@@ -152,6 +152,36 @@ span.marTop{
     margin-top: 1.125rem;
     display: block;
 }
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: var(--spacing);
+}
+.galleryItem{
+    justify-content: center;
+    text-align: center;
+    width: 32%;
+}
+.bigGalleryItem{
+    justify-content: center;
+    text-align: center;
+}
+.galleryImg{
+    width: 100%;
+    border-radius: 0.5rem;
+    transition-property: scale ease;
+    transition-duration: .25s;
+}
+.galleryItem:hover > .galleryBtn{
+    color: white;
+    background-color: #654391;
+    transform: scale(1.05);
+}
+.galleryItem:hover > a > .galleryImg{
+    transform: scale(1.05);
+}
 
 /* HEADINGS */
 .landingHeader{
@@ -265,4 +295,27 @@ span.marTop{
     max-width: 18rem;
     gap: 1.5rem !important;
     margin-top: 1.5rem !important;
+}
+.galleryBtn{
+    margin: 0.5rem 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.625rem 0 rgba(255, 255, 255, .3);
+    overflow: hidden;
+    
+    color: #0E0F13;
+    background-color: white;
+
+    font-family: "Tilt Warp", sans-serif;
+    font-weight: 400;
+    font-size: 1.125em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition-property: background-color, fill, scale ease;
+    transition-duration: .25s;
 }
