@@ -38,6 +38,50 @@ html{
     html{
         font-size: 11pt;
     }
+    ul{
+        flex-wrap: wrap;
+    }
+    nav{
+        margin-bottom: 0 !important;
+    }
+    nav, .pageHeader{
+        padding: 0 !important;
+    }
+    .navBtn{
+        width: 7rem !important;
+    }
+    .innerContent{
+        max-width: 100%;
+    }
+    div.indexBody{
+        flex-direction: column;
+        align-items: center;
+    }
+    #ibLeft{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100% !important;
+        margin-bottom: var(--gutters);
+    }
+    .socialsList{
+        margin-top: 1rem !important;
+    }
+    #ibRight{
+        width: 100% !important;
+        padding: 0 !important;
+        text-align: center;
+    }
+    .bodyText{
+        text-align: center !important;
+    }
+    .hello{
+        font-size: 1.275em !important;
+    }
+    #landingLogo{
+        width: 80% !important;
+    }
 }
 
 /* ONLOAD TRANSITIONS */
@@ -109,6 +153,18 @@ div.indexBody.onLoadFadeIn{
     padding: 0 0 0 var(--gutters);
     align-items: flex-start;
 }
+.textContent{
+    display: flex;
+    flex-direction: row;
+    gap: var(--gutters);
+    width: 100%;
+    margin-top: var(--spacing);
+}
+#tcLeft, #tcRight{
+    display: flex;
+    width: calc(50% - (var(--gutters))/2);
+    justify-content: center;
+}
 
 /* ELEMENTS */
 h1, h2, h3, h4, h5, h6{
@@ -145,9 +201,6 @@ ul, li{
     margin: 0;
     padding-inline-start: 0;
 }
-#landingLogo{
-    max-width: 100%;
-}
 span.marTop{
     margin-top: 1.125rem;
     display: block;
@@ -162,15 +215,18 @@ span.marTop{
 .galleryItem{
     justify-content: center;
     text-align: center;
-    width: 32%;
+    width: 18.04vw;
 }
 .bigGalleryItem{
     justify-content: center;
     text-align: center;
 }
 .galleryImg{
-    width: 100%;
+    width: 18.04vw;
+    height: 18.04vw;
+    overflow: hidden;
     border-radius: 0.5rem;
+    object-fit: cover;
     transition-property: scale ease;
     transition-duration: .25s;
 }
@@ -221,6 +277,7 @@ span.marTop{
     text-transform: uppercase;
 }
 #landingLogo{
+    max-width: 100%;
     width: 18rem;
     border-radius: 1rem;
     max-width: 100%;
@@ -236,6 +293,9 @@ span.marTop{
     border: none;
     border-radius: .1em;
     background-color: white;
+}
+.underlined{
+    text-decoration: underline;
 }
 
 /* BUTTONS */
@@ -294,7 +354,7 @@ span.marTop{
 .socialsList{
     max-width: 18rem;
     gap: 1.5rem !important;
-    margin-top: 1.5rem !important;
+    margin-top: 1.5rem;
 }
 .galleryBtn{
     margin: 0.5rem 0;
